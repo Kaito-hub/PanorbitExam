@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PanorbitExam/static/css/main.e82c3948.css",
+    "main.js": "/PanorbitExam/static/js/main.38b7da0e.js",
+    "index.html": "/PanorbitExam/index.html",
+    "static/media/frontWave.svg": "/PanorbitExam/static/media/frontWave.472c7478ac8bedae3bb56190ca445bd7.svg",
+    "static/media/backWave.svg": "/PanorbitExam/static/media/backWave.ed94533311f6b689887e2127b53c3e22.svg",
+    "main.e82c3948.css.map": "/PanorbitExam/static/css/main.e82c3948.css.map",
+    "main.38b7da0e.js.map": "/PanorbitExam/static/js/main.38b7da0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e82c3948.css",
+    "static/js/main.38b7da0e.js"
+  ]
+}
