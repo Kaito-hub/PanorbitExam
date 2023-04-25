@@ -1,0 +1,296 @@
+.profilePage,.postsPage,.galleryPage,.todoPage{
+    display: flex;
+    width: 93%;
+    margin-left: 3rem;
+    height: 100vh;
+    align-items: center;
+}
+
+.sidebar{
+    width: 24%;
+    /* outline: 1px solid black; */
+    height: 90%;
+    border-radius: 25px;
+    background: rgb(56,90,200);
+    background: linear-gradient(180deg, rgba(56,90,200,1) 0%, rgba(96,57,200,1) 100%);
+    
+}
+
+.sidebarOptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    
+}
+
+.option{
+    font-size: 1.1rem;
+    border-bottom: 1px solid darkgrey;
+    width: 70%;
+    padding: 1rem 0;
+    /* font-weight: 600; */
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.option.active{
+    color: white;
+    font-weight: 600;
+    position: relative;
+    /* background-color: green; */
+}
+
+.option > .navbarBorder{
+    display: none
+}
+
+.option.active > .navbarBorder{
+    display: flex;
+}
+
+.navbarBorder{
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    background-color: white;
+    right: -50px;
+    top: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: #9a9a9a;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+}
+
+.navbarBorder::before{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: -18px;
+    right: 10px;
+    /* background-color: green; */
+    border-bottom-right-radius: 10px;
+    /* border-radius: 50%; */
+    box-shadow: 0px 5px white;
+}
+
+.navbarBorder::after{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 30px;
+    right: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px -5px white;
+}
+
+.profile,.posts,.gallery,.todo{
+    /* outline: 1px solid black; */
+    height: 90%;
+    width: 100%;
+    margin-left: 3rem;
+
+}
+
+.profileHeader,.postsHeader,.galleryHeader,.todoHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* height: 3rem; */
+    border-bottom: 1px solid lightgrey;
+    padding: 1rem 0;
+    color: #545454;
+
+}
+
+.profiles{
+    display: none;
+}
+
+.signout-tab{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 180px;
+    font-size: 1.1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.name{
+    letter-spacing: 0.5px;
+}
+
+#activeProfile{
+    width: 20%;
+}
+
+.profiles.open{
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    position: absolute;
+    top: 110px;
+    right: 50px;
+    width: 20rem;
+    height: 25rem;
+    z-index: 100;
+    border-radius: 30px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 59px -30px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 59px -30px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 59px -30px rgba(0,0,0,0.75);
+}
+
+.profiles > .name{
+    color: #545454;
+    font-weight: 400;
+    padding: 0.5rem 0;
+}
+
+.profiles > .email{
+    color: #9a9a9a;
+    margin-bottom: 15px;
+}
+
+#signoutProfile{
+    width: 30%;
+    margin-top: 10px;
+}
+
+.profileAccount {
+    justify-content: center;
+}
+
+.profileAccount > .username{
+    font-size: 1rem;
+}
+
+.profileAccount > .borderLine{
+    border-bottom: 0;
+    border-top: 1px solid #9a9a9a;
+    top:0;
+}
+
+.profileAccount > .profilePic{
+    width: 15%;
+}
+
+.signout-btn{
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    background-color: #d55151;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.profileDetails,.postsDetails,.galleryDetails,.todoDetails{
+    display: flex;
+    /* align-items: center; */
+    width: 100%;
+    height: 100%;
+    margin-top: 2.5rem;
+    font-size: 1.3rem;
+}
+
+.contactAndCompanyDetails{
+    border-right: 1px solid lightgrey;
+    width: 37%;
+    padding: 1rem 1.5rem;
+    padding-left: 0;
+    
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.contactDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 20px;
+}
+
+#contactProfilePic{
+    width: 60%;
+}
+
+.contactName{
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: #545454
+}
+
+.contact, .company, .address{
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.heading{
+    width: 35%;
+    /* justify-self: flex-end; */
+    text-align: right;
+    margin-right: 10px;
+    color: #9a9a9a
+
+}
+
+.value{
+    width: 50%;
+    color: #545454;
+    font-weight: 600;
+    /* text-align: center; */
+}
+
+.companyHeading{
+    text-align: center;
+    color: #9a9a9a;
+    margin-top: 10px;
+}
+
+.addressDetails{
+    width: 50%;
+    padding: 0 3rem;
+}
+
+.addressHeading{
+    color: #9a9a9a;
+}
+
+.coords{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-left: 8rem;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+}
+
+.coords > .heading,.coords > .value{
+    width: initial;
+}
+
+.coords > .value{
+    margin-right: 10px;
+}
+
+
+

@@ -1,0 +1,125 @@
+li{
+    list-style: none;
+    /* background-color: black; */
+}
+
+img{
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+
+.landingPage{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background{
+    width: 100vw;
+    position: absolute;
+}
+.frontBackground{
+    z-index: -1;
+}
+.backBackground{
+    z-index: -2;
+    top:-3.8rem;
+}
+
+.accountsListCard{
+    background-color: white;
+    width: 38rem;
+    height: 35rem;
+    border-radius:30px ;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 9px 40px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 9px 40px -20px rgba(0,0,0,0.75);
+    box-shadow: 0px 9px 40px -20px rgba(0,0,0,0.75);
+}
+
+.header{
+    height: 25%;
+    text-align: center;
+    background-color: rgb(246 246 246);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: #545454;
+}
+
+.header > h3{
+    margin-top: 2.5rem;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.loading{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.accountsList{
+    overflow-y: scroll;
+}
+
+.accountsList::-webkit-scrollbar{
+    width: 10px;
+}
+
+.accountsList::-webkit-scrollbar-thumb{
+    background-color: darkgrey;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+/* .accountsList::-webkit-scrollbar-track{
+    border: 100px solid #fff;
+} */
+
+.account{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border-bottom: 1px solid #cfcfcf; */
+    padding: 0.9rem 2rem;
+    position: relative;
+}
+
+.profilePic{
+    border-radius: 50%;
+    width:5.2%;
+    margin-right: 10px;
+
+}
+
+.username{
+    /* color: white; */
+    font-size: 1.2rem;
+    /* letter-spacing: 1px; */
+    color: #545454;
+    /* padding: 1rem 0.5rem; */
+}
+
+.borderLine{
+    position: absolute;
+    width: 90%;
+    border-bottom: 1px solid #cfcfcf;
+    bottom: 0;
+
+}
+
+/* .account::after{
+    content: "";
+    display: block;
+    max-width: 70%;
+    border-bottom: 1px solid #cfcfcf;
+} */
+
+.footer{
+    height: 3rem;
+}
